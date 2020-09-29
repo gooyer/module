@@ -1,0 +1,32 @@
+{
+    "name": "gooyer/module",
+    "description": "Gooyer Module development package",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Łukasz Grajewski",
+            "email": "grajewski.lukasz@wp.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gooyer\\Module\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "Gooyer\\Module\\Tests": "tests/"
+    },
+    "require": {
+        "php": "^7.4",
+        "gooyer/container": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php tests"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
